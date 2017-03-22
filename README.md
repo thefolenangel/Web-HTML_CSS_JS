@@ -6,3 +6,6 @@ Added eReader, which has two style modes - dark and white, for different time of
 
 #
 Added Bootstrap-Nav-CV, playing with the navigation and grid classes on Bootstrap.
+
+#
+Added HomeWorkLandingPage - JS, separating structure from content by using HandleBarsJS.
