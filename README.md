@@ -9,3 +9,6 @@ Added Bootstrap-Nav-CV, playing with the navigation and grid classes on Bootstra
 
 #
 Added HomeWorkLandingPage - JS, separating structure from content by using HandleBarsJS.
+
+#
+Added RestarauntPage - Bootstrap, which will utilize [Twitter Bootstrap] [jQuery] [AngularJS][NodeJS] and [MongoDB] (potential) to create a website for a restaraunt bussiness.
