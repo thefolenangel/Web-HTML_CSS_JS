@@ -10,16 +10,14 @@
     "Restaurant"
   ],
   "authors": [
-    "Jogesh Muppala"
+    "Ivan Penchev"
   ],
   "license": "MIT",
   "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "bootstrap": "~3.3.5",

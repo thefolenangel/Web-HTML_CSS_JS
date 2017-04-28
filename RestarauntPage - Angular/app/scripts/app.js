@@ -1,11 +1,12 @@
 'use strict';
 
 var app = angular.module('confusionApp',[]);
-        app.controller('menuController', function() {
-            this.tab = 1;
+        app.controller('MenuController', ['$scope', function($scope) {
+            $scope.tab = 1;
             //comment
-            this.filtText = '';
-            var dishes = [
+            $scope.filtText = '';
+            $scope.showDetails = false;
+            $scope.dishes = [
                          {
                            name:'Uthapizza',
                            image: 'images/uthapizza.png',
@@ -43,27 +44,39 @@ var app = angular.module('confusionApp',[]);
                            comment: ''
                         }
                         ];
-            this.dishes = dishes;
             
-            this.select = function(setTab){
-                this.tab = setTab;
+            
+            $scope.select = function(setTab){
+                $scope.tab = setTab;
                 
                 switch(setTab){
                     case 2:
-                        this.filtText = "appetizer";
+                        $scope.filtText = "appetizer";
                         break;
                     case 3:
-                        this.filtText = "mains";
+                        $scope.filtText = "mains";
                         break;
                     case 4:
-                        this.filtText = "dessert";
+                        $scope.filtText = "dessert";
                         break;
                     default:
-                        this.filtText = "";
+                        $scope.filtText = "";
                 }
             };
             
-            this.isSelected = function(checkTab){
-                return (this.tab === checkTab);
+            $scope.toggleDetails = function(){
+               //single line inversion of a boolean variable
+                $scope.showDetails = !$scope.showDetails;
+                /* inversion using if state
+                if($scope.showDetails ){
+                    $scope.showDetails = false;
+                } else{
+                    $scope.showDetails = true;
+                }
+                */
             };
-        });
+            
+            $scope.isSelected = function(checkTab){
+                return ($scope.tab === checkTab);
+            };
+        }]);

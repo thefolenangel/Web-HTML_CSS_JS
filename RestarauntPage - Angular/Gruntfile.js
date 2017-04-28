@@ -168,6 +168,7 @@ module.exports = function(grunt) {
     'usemin'
   ]);
 
-  grunt.registerTask('default', ['build']);
-  grunt.registerTask('serve', ['build', 'connect:dist', 'watch']);
+   grunt.registerTask('serve', ['build', 'connect:dist', 'watch']);
+    grunt.registerTask('default', ['build']);
+ 
 };
