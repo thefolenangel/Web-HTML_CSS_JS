@@ -4,6 +4,7 @@
 
 <body>
     <div class="container">
+        {{>loginButtons}}
         <h1>Welcome to Site Ace!</h1>
         Fill in the form and click submit to add a site:
         {{>addSiteForm}}
@@ -15,7 +16,7 @@
     <h3>Sites you have added:</h3>
     <ul>
     {{#each all_websites}}
-    <li><a href="{{url}}">{{url}}</a></li>
+    <li><a href="{{url}}">{{url}} </a>(added by  {{safer_email createdBy}}  )</li>
     {{/each}}
     </ul>
 </template>
