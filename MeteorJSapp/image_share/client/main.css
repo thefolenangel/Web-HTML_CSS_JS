@@ -1,6 +1,13 @@
 .thumbnail {
-    min-height:500px;
-    max-height:500px;
+    height:500px;
 
 }
+.thumbnail-img{
+    max-height: 300px;
+}
+.extra_padding {padding: 0px 0px 50px 0px;}
 /* CSS declarations go here */
+body {
+
+    padding-top: 50px;
+}

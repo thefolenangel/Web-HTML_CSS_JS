@@ -3,12 +3,28 @@
 </head>
 
 <body>
-{{> image_add_form}}
 
-  <h1>Welcome to coursera!</h1>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ImageShare</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      {{> loginButtons align="right"}} 
+    </ul>
+  </div>
+</nav>
+{{> image_add_form}}
   <div class="container">
-  {{> images}}
-</div>
+      
+
+
+  <h1>Welcome to imageshare!</h1> <br/>
+     {{> images}} 
+    </div>      
 </body>
 
 <template name="image_add_form">
@@ -38,13 +54,14 @@
   </template>
 
 <template name="images">
-  <button class="btn btn-success js-show-image-form">add image</button>
+  <div class="text-right extra_padding"><button class="btn btn-success js-show-image-form">add image</button></div>
+    
 	<div class="row">
   {{#each images}}
   <div class="col-xs-12 col-md-3" id="{{_id}}">
   	<div class="thumbnail">
 
-  	 	<img class="js-image" src="{{img_src}}" 
+  	 	<img class="js-image thumbnail-img" src="{{img_src}}" 
   		alt="{{img_alt}}" /> 
   			
   		<div class="caption">
