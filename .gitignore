@@ -4,3 +4,5 @@ MeteorJSapp/week_2_peer_assessment/.meteor/
 RestarauntPage - Angular/dist/
 RestarauntPage - Angular4/node_modules/
 RestarauntPage - Bootstrap4/node_modules/
+*.css
+RestarauntPage - Bootstrap4/dist/
