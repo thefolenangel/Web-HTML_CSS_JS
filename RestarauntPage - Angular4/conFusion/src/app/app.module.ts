@@ -29,6 +29,8 @@ import { LoginComponent } from './login/login.component';
 
 import { baseURL } from './shared/baseurl';
 import { ProcessHTTPMsgService } from "./services/process-httpmsg.service";
+import { RestangularModule, Restangular } from 'ngx-restangular';
+import { RestangularConfigFactory } from './shared/restConfig';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,7 @@ import { ProcessHTTPMsgService } from "./services/process-httpmsg.service";
     AppRoutingModule,
     FormsModule ,
     HttpModule ,
+    RestangularModule.forRoot(RestangularConfigFactory),
     ReactiveFormsModule
   ],
   providers: [
