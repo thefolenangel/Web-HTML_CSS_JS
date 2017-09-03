@@ -218,5 +218,16 @@
       "description": "Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!"
     }
   ],
-  "feedback": []
+  "feedback": [
+    {
+      "firstname": "test",
+      "lastname": "test",
+      "telnum": "5525426",
+      "email": "ivan@penchev.com",
+      "agree": true,
+      "contacttype": "Tel",
+      "message": "Suensongsgade 2, 2th",
+      "id": 1
+    }
+  ]
 }

@@ -13,7 +13,7 @@ import 'rxjs/add/operator/catch';
 export class DishService {
 
   constructor(private restangular: Restangular,
-    private processHTTPMsg: ProcessHTTPMsg) { }
+    private processHTTPMsg: ProcessHTTPMsgService) { }
 
 getDishes(): Observable<Dish[]> {
 return this.restangular.all('dishes').getList();
